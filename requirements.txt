@@ -1,0 +1,16 @@
+# Analysis / evaluation pipeline
+numpy
+pandas
+scipy
+scikit-learn
+nltk
+rapidfuzz
+matplotlib
+seaborn
+
+# Semantic metrics (sentence embeddings)
+sentence-transformers          # pulls in torch (CPU is sufficient)
+
+# Optional: only needed behind a corporate TLS-inspecting proxy so that
+# huggingface model downloads use the OS trust store.
+truststore

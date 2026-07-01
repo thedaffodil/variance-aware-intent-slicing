@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Cached embeddings (large, regenerable via embed.py)
+*.npy
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.out
+*.log
+*.synctex.gz
+*.toc
+*.fdb_latexmk
+*.fls
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local scratch (not part of the release)
+_docx_txt/
+*.stderr.txt
+
+# Claude Code project instructions (not needed publicly)
+CLAUDE.md
+
+# Old paper drafts and internal reports (kept on disk, excluded from the public repo)
+/writing/
+/REPORT.md
+REPORT_datagen.md
+report_mpnet/
+extract_docx.py
+eda_old.py
+final/writing/conference-latex-template/
+
+# Redundant root-level full-corpus analysis scripts (the paper pipeline lives in final/)
+/separability.py
+/diversity.py
+/embed.py
+/semantic.py
+/tsne_plot.py
+/report.py
+/goodness_weighted.py
+
+# Additional root-level scratch not part of the release
+/main.tex
+/consistency.py
+/robustness.py
+/paper_tables.py
+REPORT copy.md

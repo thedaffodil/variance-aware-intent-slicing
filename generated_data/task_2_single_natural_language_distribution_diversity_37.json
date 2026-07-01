@@ -1,0 +1,204 @@
+```json
+[
+  {
+    "intent": "Spin up a new eMBB slice for the downtown business district.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "The media broadcast team just confirmed their OB van deployment starts in two hours — we need a dedicated slice ready before they go live.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Our enterprise SLA with the port authority requires a private slice for their automated crane systems. Can we get that provisioned today?",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Provisioning requested: new IoT slice for connected vehicle pilot, Zone 4.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Traffic engineering flagged insufficient isolation for the drone corridor operations — allocate a URLLC slice for that segment.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Need a dedicated slice for the remote surgery pilot starting next week. Latency requirements are strict.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Can we get a new slice instantiated for the hospital patient monitoring system before the night shift handover?",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "The football match ended three hours ago and that event slice is still holding resources. Tear it down.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Trial period for the retail analytics slice expired last week. Decommission it and release the resources.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Event's over, kill the slice.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Post-maintenance cleanup — the test slice we spun up for firmware validation is no longer needed.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Dealloc confirmed for temporary event slice, Site: Central Park, ID: S-1192.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "The outdoor festival wrapped up last night. Can we release the resources from that temporary slice now?",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Slice NSI-0047 is no longer serving any UEs. Terminate it.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Show me all active slices.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Which slices are currently running in the northern region?",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Before we start the planned maintenance window, I need a full list of provisioned slices with their operational state.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Pull up the slice inventory — capacity planning meeting starts in 30 minutes.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Can you give me a snapshot of all running slices including current load status and S-NSSAI?",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "List slices, include S-NSSAI and operational state for each.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Bump the UE limit on the logistics slice to 5000.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "We're hitting the device cap on the smart meter slice — need to raise it before the next deployment batch goes live.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "The factory floor is expanding to a new wing. The industrial eMBB slice needs to accommodate around 800 additional devices.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "Critical — UE quota for the emergency services slice is maxed out. Extend it now.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "The IoT rollout ended up bigger than forecasted. Can we increase the device quota on that slice?",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "UE cap needs adjustment for slice S-2241. New device onboarding starts Monday.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "Raise the PDU session limit for the connected vehicle slice before the morning rush.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Session concurrency on the video streaming slice is sitting at 95%. We should increase the ceiling before it starts rejecting sessions.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Peak hours are approaching and the entertainment slice is close to its max session count.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Session rejections are occurring on the logistics tracking slice — PDU quota is clearly too low for current demand.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Can we bump the PDU session cap on the maritime IoT slice before the shipping season gets into full swing?",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "PDU session limit for slice A-07 needs to go up.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "The gaming slice is getting starved during prime time. Increase the RB allocation ratio.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "Throughput on the industrial automation slice dropped this afternoon — looks like the RB share needs to be tuned upward.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "RB ratio on slice S-114 is too low. Bump it.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "During last night's live concert the entertainment slice was constantly throttled. We need a higher RB allocation locked in before the next event.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "Can we reallocate more radio blocks to the URLLC slice covering the autonomous vehicle test corridor?",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "Media slice is underperforming at peak hours. Boost the radio resource ratio for that service.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "Cap the RRC connections on the mMTC slice to reduce gNodeB load during busy hours.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "gNB-0023 is showing RRC overload. Reduce the connection limit for the IoT slice served by that node.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "The public safety slice needs a higher RRC ceiling — during city-wide events the current limit is not enough to accommodate all responders.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "Adjust RRC limit for slice group 3.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "RRC connected cap on slice SG-07 should be increased per the SLA review outcome from last week.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "Emergency slice is running close to its RRC connection ceiling. We need more headroom for the drill this weekend.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "Elevated packet drop rates on the N3 interface since 02:00 UTC. Can someone pull the alarm logs and check for transport faults?",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "Getting a wave of coverage complaints from users in the industrial zone near the eastern bypass. Could be an antenna misalignment.",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "What is the average end-to-end latency on the eMBB slice over the past 24 hours?",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "Fiber cut confirmed on the backhaul link to Site 44. Need to assess service impact across affected cells.",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "VIP enterprise customer C-881 is reporting consistent throughput degradation since yesterday afternoon. Need a root cause before the SLA breach window.",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "Can you verify whether the monthly usage report for account E-20045 reflects the correct data volume billed?",
+    "slicing_operation": "other"
+  }
+]
+```

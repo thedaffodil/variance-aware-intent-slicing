@@ -1,0 +1,63 @@
+--------------------------------------------------
+VARIANCE ENHANCEMENT: SCENARIO-PATH + DOMAIN COVERAGE
+--------------------------------------------------
+
+Generate intents from diverse telecom scenario paths and domain contexts.
+
+Do not start from the operation name.
+Start from a realistic operational situation, business need, network condition, event, or service context.
+
+The intent should sound like it was produced because of a real telecom scenario, not because the model is asked to generate a specific operation label.
+
+Use diverse telecom scenario paths such as:
+
+1. Event congestion → temporary resource adjustment → slice_rb_update or slice_ue_quota_update
+2. Post-event cleanup → temporary service ended → slice_deallocation
+3. IoT growth → session capacity pressure → slice_pdu_session_quota_update
+4. Public safety overload → critical service control → slice_rrc_con_update
+5. Network audit → operational visibility request → slice_list
+6. Factory automation deployment → low-latency service need → slice_allocation
+7. Enterprise maintenance → slice cleanup or quota adjustment → slice_deallocation or slice_ue_quota_update
+8. Cloud gaming demand spike → throughput or latency pressure → slice_allocation or slice_rb_update
+9. Smart city sensor growth → massive device scaling → slice_pdu_session_quota_update
+10. Emergency response → priority traffic handling → slice_rrc_con_update or slice_rb_update
+11. Healthcare service expansion → reliable connectivity need → slice_allocation or slice_ue_quota_update
+12. Rural broadband rollout → service deployment need → slice_allocation
+13. Mining operation telemetry → massive device/session growth → slice_pdu_session_quota_update
+14. Energy grid monitoring → critical IoT communication need → slice_allocation or slice_pdu_session_quota_update
+15. Logistics hub congestion → temporary capacity pressure → slice_ue_quota_update or slice_rb_update
+
+Use diverse telecom-related domains such as:
+- healthcare connectivity
+- smart city infrastructure
+- industrial automation
+- logistics and transportation
+- emergency services
+- public safety
+- rural broadband
+- cloud gaming
+- enterprise connectivity
+- mining operations
+- energy grid monitoring
+- massive IoT deployments
+- stadium events
+- autonomous transportation
+- temporary field operations
+
+For each domain, vary:
+- slicing_operation
+- scenario type
+- urgency level
+- operator language style
+- sentence length
+- explicitness level
+- numeric or capacity-related references when relevant
+
+Do not overuse only common domains such as:
+- factory automation
+- stadium events
+- IoT
+
+Avoid generating too many examples from the same scenario path or domain.
+
+The goal is to improve domain coverage, scenario diversity, and reduce scenario-level overfitting.

@@ -1,0 +1,21 @@
+VARIANCE ENHANCEMENT: INTENT CLASSIFICATION UTILITY
+--------------------------------------------------
+
+Generate examples that are useful for training an intent classifier.
+
+For each slicing_operation:
+- generate semantically clear but linguistically diverse intents
+- avoid ambiguous operation labels unless the intent is realistically underspecified
+- ensure that the operational goal maps to exactly one slicing_operation
+- include diverse wording for the same operation type
+- avoid relying only on operation-specific keywords
+
+Do not make all examples easy keyword matches.
+
+For example:
+- slice_rb_update intents should not always contain “RB allocation”
+- slice_pdu_session_quota_update intents should not always contain “PDU session”
+- slice_ue_quota_update intents should not always contain “UE quota”
+- slice_deallocation intents should not always contain “delete” or “terminate”
+
+Use realistic alternative wording while preserving the correct operation label.

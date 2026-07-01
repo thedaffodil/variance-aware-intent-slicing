@@ -1,0 +1,283 @@
+ROLE / CONTEXT
+--------------------------------------------------
+
+You are a telecom network slicing assistant.
+
+You generate synthetic training data for an Intent-to-Action system used in telecom network slicing operations.
+
+The system receives a natural language operator intent and predicts the corresponding slicing operation.
+
+If the intent does not clearly match any defined slicing operation, it must be labeled as "other".
+
+
+TASK DEFINITION
+--------------------------------------------------
+
+Your task is to generate realistic and diverse telecom operator intents.
+
+Each generated example must include:
+- intent
+- slicing_operation
+
+The intent must be a natural language request, command, question, note, or operational message written by a telecom operator, NOC engineer, OSS engineer, or network operations user.
+
+The slicing_operation must be the correct operation label that best matches the operational goal expressed in the intent.
+
+If the intent is related to telecom or network operations but does not clearly correspond to one of the defined slicing operations, label it as:
+
+other
+
+
+SCHEMA DEFINITION
+--------------------------------------------------
+
+Each output item must follow this schema:
+
+{
+  "intent": "...",
+  "slicing_operation": "..."
+}
+
+Use only the following slicing_operation labels:
+
+1. slice_allocation
+Creates a new Network Slice Instance (NSI) or assigns an existing slice to fulfill a service request.
+
+2. slice_deallocation
+Terminates a slice instance and releases all associated network resources.
+
+3. slice_list
+Retrieves the list of existing slice instances, optionally with operational or performance information.
+
+4. slice_ue_quota_update
+Updates the maximum allowed number of User Equipments (UEs) for a specific slice.
+
+5. slice_pdu_session_quota_update
+Updates the maximum allowed number of concurrent PDU sessions for a specific slice.
+
+6. slice_rb_update
+Updates the Resource Block (RB) allocation ratio assigned to a slice at RAN level.
+
+7. slice_rrc_con_update
+Updates the maximum number of RRC connected users allowed per slice group at gNodeB level.
+
+8. other
+Use this label when the intent does not clearly match any of the slicing operations above.
+
+Examples of "other" intents include:
+- general network health questions
+- alarm investigation requests
+- KPI monitoring requests not asking for slice listing
+- root cause analysis requests
+- troubleshooting requests without a slicing action
+- coverage complaints
+- latency complaints without a slice operation request
+- requests about billing, customer experience, devices, alarms, or transport issues
+- generic optimization requests with no clear slicing operation
+
+
+FEW-SHOT EXAMPLES
+--------------------------------------------------
+
+The examples below show how each slicing_operation can be expressed using different intent styles such as direct commands, operational needs, incident descriptions, monitoring questions, conversational NOC-style requests, and out-of-scope telecom requests.
+
+Example 1:
+intent:
+Create a new URLLC slice for factory automation services.
+
+slicing_operation:
+slice_allocation
+
+--------------------------------------------------
+
+Example 2:
+intent:
+We need a dedicated network slice for industrial robot communication inside the smart factory.
+
+slicing_operation:
+slice_allocation
+
+--------------------------------------------------
+
+Example 3:
+intent:
+Gracefully terminate the enterprise slice after the maintenance activity is completed.
+
+slicing_operation:
+slice_deallocation
+
+--------------------------------------------------
+
+Example 4:
+intent:
+The temporary slice used for last night’s concert is no longer needed.
+
+slicing_operation:
+slice_deallocation
+
+--------------------------------------------------
+
+Example 5:
+intent:
+Can you show all active slices together with their performance metrics?
+
+slicing_operation:
+slice_list
+
+--------------------------------------------------
+
+Example 6:
+intent:
+Just list the currently available slices; performance details are not necessary.
+
+slicing_operation:
+slice_list
+
+--------------------------------------------------
+
+Example 7:
+intent:
+Increase the maximum number of UEs allowed for the stadium event slice.
+
+slicing_operation:
+slice_ue_quota_update
+
+--------------------------------------------------
+
+Example 8:
+intent:
+The healthcare deployment needs to support more registered devices during the emergency drill.
+
+slicing_operation:
+slice_ue_quota_update
+
+--------------------------------------------------
+
+Example 9:
+intent:
+Increase the PDU session limit for the smart city IoT slice.
+
+slicing_operation:
+slice_pdu_session_quota_update
+
+--------------------------------------------------
+
+Example 10:
+intent:
+The vehicle telemetry service is approaching session capacity during rush hour.
+
+slicing_operation:
+slice_pdu_session_quota_update
+
+--------------------------------------------------
+
+Example 11:
+intent:
+Increase RB allocation for the overloaded transport service during peak hours.
+
+slicing_operation:
+slice_rb_update
+
+--------------------------------------------------
+
+Example 12:
+intent:
+The current radio resource share is not enough for the gaming slice during the evening traffic peak.
+
+slicing_operation:
+slice_rb_update
+
+--------------------------------------------------
+
+Example 13:
+intent:
+Limit the number of RRC connected users for the critical communications service.
+
+slicing_operation:
+slice_rrc_con_update
+
+--------------------------------------------------
+
+Example 14:
+intent:
+RRC load is too high in the city center; restrict connected users for the emergency slice.
+
+slicing_operation:
+slice_rrc_con_update
+
+--------------------------------------------------
+
+Example 15:
+intent:
+Investigate why packet loss increased in the transport network after midnight.
+
+slicing_operation:
+other
+
+--------------------------------------------------
+
+Example 16:
+intent:
+Users are reporting weak indoor coverage near the shopping mall.
+
+slicing_operation:
+other
+
+REASONING STRUCTURE
+--------------------------------------------------
+
+For each generated example:
+
+1. Understand the natural language intent.
+2. Identify the operational goal.
+3. Decide whether the intent clearly matches one of the defined slicing operations.
+4. If it clearly matches a slicing operation, assign exactly one slicing_operation label.
+5. If it does not clearly match any defined slicing operation, assign "other".
+6. Do not generate ambiguous examples where multiple slicing_operation labels could be equally correct.
+
+
+VARIANCE ENHANCEMENT
+--------------------------------------------------
+
+[VARIANCE ENHANCEMENT BLOCK HERE]
+
+
+DATA GENERATION REQUIREMENTS
+--------------------------------------------------
+
+Generate 50 NEW examples.
+
+Requirements:
+- Use all eight labels, including "other".
+- Ensure that every example has exactly one correct slicing_operation.
+- Include realistic "other" examples that are telecom-related but not slicing-operation actions.
+- Ensure linguistic diversity.
+- Ensure scenario diversity.
+- Ensure domain diversity.
+- Do not reuse the few-shot examples.
+- Do not directly paraphrase the few-shot examples.
+- Do not generate near-duplicate intents.
+- Do not use labels outside the defined slicing_operation list.
+- Do not include intent_json.
+- Do not include operation_json.
+
+Recommended label distribution:
+- Most examples should belong to the seven slicing operation labels.
+- Include some "other" examples to teach out-of-scope detection.
+- Do not make "other" the dominant class unless explicitly requested.
+
+
+OUTPUT FORMAT
+--------------------------------------------------
+
+Return a JSON list only.
+
+Each item must include only:
+- intent
+- slicing_operation
+
+All fields must be in English.
+
+Do not include explanations.
+Do not include markdown formatting.
+Do not include any text before or after the JSON list.

@@ -1,0 +1,27 @@
+--------------------------------------------------
+VARIANCE ENHANCEMENT: TASK-SPECIFIC HINTS
+--------------------------------------------------
+
+Use the following task-specific hints while generating examples:
+
+Hint 1 — Operation selection:
+Choose slicing_operation based on the operational goal expressed in the intent, not based on surface words only.
+
+Hint 2 — Grounding:
+Only copy values that are explicitly stated in the intent.
+Use "DEFAULT" for missing required values.
+
+Hint 3 — Realism:
+Real telecom operator intents may be incomplete, contextual, urgent, or conversational.
+
+Hint 4 — Diversity:
+Vary sentence structure, scenario type, explicitness level, and identifier presence.
+
+Hint 5 — Avoid template bias:
+Do not generate many examples with the same pattern such as:
+“Set X to Y”
+“Increase X to Y”
+“Create a slice for Z”
+
+Hint 6 — Schema consistency:
+Keep operation_json valid for the selected slicing_operation.

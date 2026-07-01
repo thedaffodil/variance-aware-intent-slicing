@@ -1,0 +1,65 @@
+--------------------------------------------------
+VARIANCE ENHANCEMENT: NATURAL LANGUAGE + DISTRIBUTION DIVERSITY
+--------------------------------------------------
+
+Avoid generating only clean benchmark-like commands.
+
+Generate realistic telecom operator language, including:
+- incident descriptions
+- monitoring questions
+- operational shorthand
+- incomplete but realistic requests
+- business-context requests
+- troubleshooting notes
+- NOC-style messages
+- context-first descriptions
+
+Use different sentence forms:
+- short commands
+- medium-length operational requests
+- long contextual requests
+- questions
+- urgent notes
+- conversational operator messages
+- engineering-style comments
+
+Generate examples with balanced distribution across:
+- slicing_operation
+- sentence length
+- scenario type
+- numeric value pattern
+- identifier presence
+- operator communication style
+
+Avoid concentrating too many examples in:
+- a single sentence pattern
+- a single operation type
+- a single scenario type
+- a single numeric range
+- a single identifier pattern
+- a single operator communication style
+
+The dataset should contain:
+- short intents
+- medium-length intents
+- long contextual intents
+- direct operational commands
+- monitoring questions
+- incident-driven requests
+- business-context requests
+- troubleshooting notes
+- NOC-style messages
+- underspecified but realistic telecom requests
+
+Examples of desired variation:
+- The stadium slice is struggling again during peak traffic.
+- Can we give more radio resources to the event service?
+- IoT sessions are getting close to the limit again.
+- The temporary slice is still active after the event.
+- Need more capacity around the venue tonight.
+- Operators are reporting congestion near the transport hub.
+- Can we check which slices are active before the maintenance window?
+
+Do not overuse simple command templates.
+
+Prioritize distributional diversity, not only sample count.

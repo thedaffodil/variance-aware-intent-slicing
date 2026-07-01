@@ -1,0 +1,7 @@
+technique,mean_pairwise_cos_mini,mean_pairwise_cos_mpnet,centroid_dispersion_mini,centroid_dispersion_mpnet,separation_gap_mini,separation_gap_mpnet,centroid_drift_mini,centroid_drift_mpnet
+T1 intent_clf,0.245,0.277,0.505,0.474,0.138,0.156,0.017,0.015
+T2 nat_lang,0.254,0.298,0.493,0.451,0.17,0.172,0.017,0.015
+T3 scenario,0.252,0.295,0.499,0.457,0.171,0.179,0.016,0.013
+T4 taboo,0.25,0.28,0.499,0.469,0.161,0.169,0.017,0.015
+T5 hints,0.249,0.287,0.501,0.463,0.164,0.169,0.016,0.014
+T6 all,0.239,0.281,0.511,0.471,0.152,0.162,0.024,0.019

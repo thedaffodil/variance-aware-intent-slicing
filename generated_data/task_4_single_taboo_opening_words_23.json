@@ -1,0 +1,204 @@
+```json
+[
+  {
+    "intent": "A new URLLC slice is needed to support drone delivery coordination in the logistics corridor.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "The autonomous vehicle pilot starting next Monday requires a dedicated low-latency slice on the highway segment.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Port authority operations need a private network slice for crane automation and container tracking.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "A temporary slice should be provisioned for the outdoor music festival happening this weekend.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "The hospital emergency wing is requesting a dedicated eMBB slice for real-time surgical imaging.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Smart meter rollout in district 7 requires a massive IoT slice with low power requirements.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "Our enterprise client in the financial district needs an isolated slice for their trading floor.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "The mining site expansion requires a new slice to handle underground sensor telemetry.",
+    "slicing_operation": "slice_allocation"
+  },
+  {
+    "intent": "After the trade expo concluded yesterday, the dedicated slice assigned to it should be torn down.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "The trial slice for the retail chain pilot expired last week and resources should be reclaimed.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "That temporary URLLC instance we spun up for the robotics demo is no longer needed.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Our contract with the broadcasting company ends today; please release the associated slice.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "The stadium slice from Saturday's match is still running — it needs to be terminated.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Following the warehouse closure, all associated network slices should be decommissioned.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "The legacy enterprise slice for the bank branch that migrated to fiber can now be removed.",
+    "slicing_operation": "slice_deallocation"
+  },
+  {
+    "intent": "Can we pull up a full inventory of all running slices across the metropolitan zone?",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Need a quick overview of all active slice instances before the capacity planning meeting.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "What slices are currently provisioned for the northern region's enterprise accounts?",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Could you enumerate all slices along with their current utilization figures?",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "The operations team wants a report of all active slice instances and their operational status.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "Before the weekend freeze window, we need to see every provisioned slice in the core network.",
+    "slicing_operation": "slice_list"
+  },
+  {
+    "intent": "The device count on the smart campus slice is nearing its ceiling ahead of the semester start.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "We need to accommodate more connected ambulances in the emergency services slice this quarter.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "The agriculture IoT slice is maxing out on registered sensors during the harvest season.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "Our enterprise slice for a logistics fleet needs to onboard 500 additional tracking units.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "The connected wearables project is rolling out to a second hospital wing and needs a higher UE cap.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "Device registration failures are being reported on the industrial IoT slice — the UE limit may have been reached.",
+    "slicing_operation": "slice_ue_quota_update"
+  },
+  {
+    "intent": "The gaming slice is dropping new session requests during peak evening hours — session capacity must be expanded.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Our video streaming partner says users are getting connection refusals — the PDU session ceiling needs review.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "During the morning rush, the commuter infotainment slice is hitting its concurrent session limit.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "The logistics slice serving the cargo terminal needs more concurrent PDU sessions during shift handovers.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Remote surgery sessions on the medical slice are being queued instead of established — the session quota is too low.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "Traffic patterns on the eMBB slice tonight suggest that the PDU session threshold will be breached by 21:00.",
+    "slicing_operation": "slice_pdu_session_quota_update"
+  },
+  {
+    "intent": "The radio resource share assigned to the public safety slice is insufficient during major incidents.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "Throughput on the broadband slice has dropped noticeably — the RB allocation ratio looks too conservative.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "The broadcasting slice needs a higher RB ratio ahead of the live sports transmission tonight.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "During peak hours the enterprise video-conferencing slice is getting squeezed at the RAN layer.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "Resource block utilization for the URLLC slice is dangerously low — we might be over-provisioning there.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "The V2X slice needs additional radio resources to meet latency targets on the new highway corridor.",
+    "slicing_operation": "slice_rb_update"
+  },
+  {
+    "intent": "RRC connections on the city-center gNodeB for the public broadband slice are overwhelming the control plane.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "The RRC connected user cap for the commuter rail slice is too permissive — it is causing signaling congestion.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "During large gatherings, the shared access slice causes gNodeB control-plane overload — the RRC limit needs tightening.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "The maximum RRC connections per slice group should be reduced at the downtown gNodeB before rush hour.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "Signaling load at the gNodeB is unusually high — we need to cap RRC connected users on the affected slice.",
+    "slicing_operation": "slice_rrc_con_update"
+  },
+  {
+    "intent": "Several users in the eastern district are reporting high latency that doesn't correlate with any slice event.",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "There's an active alarm on the transport link between sites A and B — what's the root cause?",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "Can you check why call drop rates have been elevated since the firmware upgrade last night?",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "Throughput on the backhaul between the core and the regional hub has been degrading since Tuesday.",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "A customer complaint came in about poor 5G signal inside the new airport terminal building.",
+    "slicing_operation": "other"
+  },
+  {
+    "intent": "PDCP retransmission rate on sector 3 of site NR_7821 jumped to 18% — needs investigation.",
+    "slicing_operation": "other"
+  }
+]
+```

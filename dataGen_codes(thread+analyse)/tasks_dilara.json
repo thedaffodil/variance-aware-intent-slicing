@@ -1,0 +1,27 @@
+[
+  {
+    "task_id": 2,
+    "task_name": "single_NATURAL LANGUAGE + DISTRIBUTION DIVERSITY",
+    "enhancements": [
+      "NATURAL LANGUAGE + DISTRIBUTION DIVERSITY"
+    ]
+  },
+  {
+    "task_id": 4,
+    "task_name": "single_TABOO OPENING WORDS",
+    "enhancements": [
+      "TABOO OPENING WORDS"
+    ]
+  },
+  {
+    "task_id": 6,
+    "task_name": "all_enhancements",
+    "enhancements": [
+      "INTENT CLASSIFICATION UTILITY",
+      "NATURAL LANGUAGE + DISTRIBUTION DIVERSITY",
+      "SCENARIO-PATH + DOMAIN COVERAGE",
+      "TABOO OPENING WORDS",
+      "TASK-SPECIFIC HINTS"
+    ]
+  }
+]
